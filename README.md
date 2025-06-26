@@ -30,7 +30,7 @@ The application consists of a backend that handles communication with external A
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/T-9173/researchassistant.git](https://github.com/T-9173/researchassistant.git)
+    git clone https://github.com/T-9173/researchassistant.git
     cd researchassistant
     ```
 2.  **Install dependencies:**

@@ -11,6 +11,62 @@ The AI Research Assistant is a desktop application designed to help users search
 * **View paper details:** See a paper's title, authors, year of publication, venue, abstract, and more.
 * **Direct-linking to source:** Open the paper's URL in your web browser with a single click.
 
+## User Interface Overview
+
+Here are some screenshots showcasing the application's user interface and key functionalities:
+
+### Initial Application State
+
+This image shows the AI Research Assistant upon launch, displaying the search bar, results limit, and initial instructions.
+<div align="center">
+    <img src="images/initial_state.png" alt="Initial State of AI Research Assistant" width="80%">
+    <br>
+    <em>Figure 1: The application's initial state, ready for a search query.</em>
+</div>
+<br>
+
+### Search Results and Paper Details (arXiv Example)
+
+After entering a research topic (e.g., "Convolutional Neural Networks") and performing a search, the application displays a list of found papers on the left. Clicking on a paper reveals its details, abstract, AI-generated insights, and related work on the right. This example shows details for an arXiv paper.
+<div align="center">
+    <img src="images/search_results_arxiv.png" alt="Search Results with ArXiv Paper Details" width="80%">
+    <br>
+    <em>Figure 2: Search results with detailed information and AI insights for an arXiv paper.</em>
+</div>
+<br>
+
+### Search Results and Paper Details (Semantic Scholar Example)
+
+This screenshot demonstrates another search result, this time highlighting a paper fetched from Semantic Scholar, along with its details and the AI's analytical essay.
+<div align="center">
+    <img src="images/search_results_semantic_scholar.png" alt="Search Results with Semantic Scholar Paper Details" width="80%">
+    <br>
+    <em>Figure 3: Detailed view of a Semantic Scholar paper with AI analysis.</em>
+</div>
+<br>
+
+### Related Work Feature
+
+When viewing a paper's details, the "Related Work" section provides clickable links to other relevant research. This allows users to easily navigate and explore interconnected academic literature.
+<div align="center">
+    <img src="images/related_work.png" alt="Related Work Section" width="80%">
+    <br>
+    <em>Figure 4: The "Related Work" section displaying clickable titles of relevant papers.</em>
+</div>
+<br>
+
+### New Window for Related Papers
+
+Clicking on a related paper's title opens its abstract and analytical essay in a new, separate window, facilitating comparison and deeper exploration without losing context of the primary search.
+<div align="center">
+    <img src="images/related_paper_window.png" alt="New Window for Related Paper Details" width="80%">
+    <br>
+    <em>Figure 5: A new window showing details and AI analysis for a related paper.</em>
+</div>
+<br>
+
+---
+
 ## How It Works
 
 The application consists of a backend that handles communication with external APIs and a frontend for user interaction.
@@ -30,7 +86,7 @@ The application consists of a backend that handles communication with external A
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/T-9173/researchassistant.git
+    git clone [https://github.com/T-9173/researchassistant.git](https://github.com/T-9173/researchassistant.git)
     cd researchassistant
     ```
 2.  **Install dependencies:**
@@ -48,18 +104,3 @@ The application consists of a backend that handles communication with external A
 Run the `gui.py` file to start the application:
 ```bash
 python gui.py
-```
-
-1.  Enter your research topic in the search bar.
-2.  Select the number of results you want to retrieve.
-3.  Click the "Search" button.
-4.  Browse the list of found papers on the left.
-5.  Click on a paper to view its details and the AI-generated analysis on the right.
-6.  Click on the title of a related paper to open it in a new window.
-
-## Dependencies
-
-* [requests](https://pypi.org/project/requests/)
-* [feedparser](https://pypi.org/project/feedparser/)
-* [google-generativeai](https://pypi.org/project/google-generativeai/)
-* [ttkbootstrap](https://pypi.org/project/ttkbootstrap/)
